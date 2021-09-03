@@ -9,8 +9,9 @@ public class UserProfile {
     private String photo = "default photo";
     private String userName;
 
+    ArrayList<Project> projects = new ArrayList<>();
 
-    private ArrayList<Column> columns = new ArrayList<>();
+
 
     public UserProfile(String userName, String password, String firstName, String lastName, String photo) {
         this.userName= userName;
@@ -68,12 +69,9 @@ public class UserProfile {
     public void setPhoto(String photo) {
         this.photo = photo;
     }
-    public ArrayList<Column> getColumns() {
-        return columns;
-    }
-
-
-
+   public void addProject(String name){
+        projects.add(new Project());
+   }
 
 
 
