@@ -2,13 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1d8fe7-61fe-404c-a094-bc58a603ab96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Checklist.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/ChangeColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/CreateColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/CreateProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/CreateTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/DeleteColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/DeleteProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/DeleteTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/EditColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/EditProfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/EditProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/EditTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/IResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Response/ReorderTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SmartBoard/Authenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SmartBoard/Column.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Authenticator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Checklist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Checklist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Column.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/SmartBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Workspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Workspace.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +36,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -26,7 +45,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1xXQtkKnyEYO8s3SEoRw2UiZK18" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -37,6 +58,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Response" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -48,7 +70,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1630499169514</updated>
-      <workItem from="1630499174331" duration="22764000" />
+      <workItem from="1630499174331" duration="23020000" />
+      <workItem from="1631230033955" duration="59424000" />
     </task>
     <servers />
   </component>
@@ -56,9 +79,36 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1630646287076">
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1631586684806">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1630646287076" />
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1631586684806" />
+    <state x="313" y="97" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631404110288">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="313" y="97" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1289.819@0.0.1289.819" timestamp="1631404110288" />
+    <state x="375" y="71" key="FileChooserDialogImpl" timestamp="1631505143441">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="375" y="71" key="FileChooserDialogImpl/0.0.1289.819@0.0.1289.819" timestamp="1631505143441" />
+    <state x="269" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1631230043378">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="269" y="192" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1631230043378" />
+    <state x="0" y="0" key="new project wizard" timestamp="1631546717707">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="0" y="0" key="new project wizard/0.0.1289.819@0.0.1289.819" timestamp="1631546717707" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Response/EditProject.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

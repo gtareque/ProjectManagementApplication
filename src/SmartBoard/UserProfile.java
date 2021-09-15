@@ -1,3 +1,5 @@
+package SmartBoard;
+
 import java.util.ArrayList;
 
 public class UserProfile {
@@ -10,6 +12,12 @@ public class UserProfile {
     private String userName;
 
     ArrayList<Project> projects = new ArrayList<>();
+
+    public Project getCurrentProjectOnDisplay() {
+        return currentProjectOnDisplay;
+    }
+
+    Project currentProjectOnDisplay;
 
 
 
@@ -69,11 +77,22 @@ public class UserProfile {
     public void setPhoto(String photo) {
         this.photo = photo;
     }
-   public void addProject(String name){
-        projects.add(new Project());
+
+
+    public void addProject(String name){
+        projects.add(new Project(name));
+        currentProjectOnDisplay= projects.get(0);
    }
 
+    public void removeProject(int projectIndex) {
+        projects.remove(projectIndex);
+        projects.trimToSize();
+    }
 
+
+    public Project getProject(int index) {
+        return projects.get(index);
+    }
 
 
 

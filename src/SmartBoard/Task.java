@@ -1,19 +1,21 @@
+package SmartBoard;
+
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Task {
+public class Task extends Project {
+
     private String description;
-    private String name;
     private LocalDate dueDate;
     private ArrayList<Checklist> checklists = new ArrayList<>();
 
     public Task(String name, String description) {
-        this.name = name;
+        super(name);
         this.description = description;
     }
 
     public Task(String name, String description, LocalDate dueDate) {
-        this.name = name;
+        super(name);
         this.description = description;
         this.dueDate = dueDate;
     }
@@ -31,7 +33,9 @@ public class Task {
         checklists.trimToSize();
 
     }
-
+    public void setName(String name) {
+        super.setName(name);
+    }
 
     public String getDescription() {
         return description;
@@ -41,11 +45,5 @@ public class Task {
         this.description = description;
     }
 
-    public String getName() {
-        return name;
-    }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }

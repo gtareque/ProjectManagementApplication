@@ -1,3 +1,5 @@
+package SmartBoard;
+
 public class Checklist {
     public Checklist(String message) {
         this.message = message;
