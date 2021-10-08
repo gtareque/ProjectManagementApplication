@@ -2,31 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1d8fe7-61fe-404c-a094-bc58a603ab96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/ChangeColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/CreateColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/CreateProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/CreateTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/DeleteColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/DeleteProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/DeleteTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/EditColumn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/EditProfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/EditProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/EditTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/IResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Response/ReorderTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SmartBoard/Authenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SmartBoard/Column.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Controllable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/CreateProjectController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/LoaderFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/SignupController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/WorkspaceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Authenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Workspace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Authenticator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Checklist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Checklist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Column.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/SmartBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Workspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/Workspace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/ChangeColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/ChangeColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/CreateColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/CreateColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/CreateProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/CreateProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/CreateTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/CreateTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/DeleteColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/DeleteColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/DeleteProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/DeleteProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/DeleteTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/DeleteTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/EditColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/EditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/EditProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditProject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/EditTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/IResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/IResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Response/ReorderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/ReorderTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Authenticator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Checklist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Checklist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/SmartBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/SmartBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Workspace.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +65,39 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Response" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\ProjectManagementApplication\src\resources\view" />
+      <recent name="C:\ProjectManagementApplication\src" />
+      <recent name="C:\ProjectManagementApplication\src\XMLfiles" />
+      <recent name="C:\ProjectManagementApplication\src\SmartBoard" />
+      <recent name="C:\ProjectManagementApplication\src\java\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SmartBoard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SmartBoard.SmartBoard" />
+      <module name="ProjectManagementApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.SmartBoard" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,7 +110,16 @@
       <option name="presentableId" value="Default" />
       <updated>1630499169514</updated>
       <workItem from="1630499174331" duration="23020000" />
-      <workItem from="1631230033955" duration="59424000" />
+      <workItem from="1631230033955" duration="59427000" />
+      <workItem from="1631834920293" duration="9130000" />
+      <workItem from="1632455837040" duration="8722000" />
+      <workItem from="1632654071012" duration="19538000" />
+      <workItem from="1632754920467" duration="4777000" />
+      <workItem from="1632791723476" duration="1056000" />
+      <workItem from="1632792812292" duration="968000" />
+      <workItem from="1632797812832" duration="19365000" />
+      <workItem from="1633068306177" duration="10418000" />
+      <workItem from="1633587070288" duration="11267000" />
     </task>
     <servers />
   </component>
@@ -79,26 +127,70 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1631586684806">
+    <state x="353" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1633094461152">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1631586684806" />
-    <state x="313" y="97" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631404110288">
+    <state x="353" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1289.819@0.0.1289.819" timestamp="1633094461152" />
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1632813296183">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="313" y="97" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1289.819@0.0.1289.819" timestamp="1631404110288" />
-    <state x="375" y="71" key="FileChooserDialogImpl" timestamp="1631505143441">
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1632813296183" />
+    <state x="400" y="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1632831248308">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="375" y="71" key="FileChooserDialogImpl/0.0.1289.819@0.0.1289.819" timestamp="1631505143441" />
-    <state x="269" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1631230043378">
+    <state x="400" y="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1289.819@0.0.1289.819" timestamp="1632831248308" />
+    <state x="312" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1633087166725">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="269" y="192" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1631230043378" />
+    <state x="312" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1289.819@0.0.1289.819" timestamp="1633087166725" />
+    <state x="313" y="97" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1632755124575">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="313" y="97" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1289.819@0.0.1289.819" timestamp="1632755124575" />
+    <state x="375" y="71" key="FileChooserDialogImpl" timestamp="1632791439356">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="375" y="71" key="FileChooserDialogImpl/0.0.1289.819@0.0.1289.819" timestamp="1632791439356" />
+    <state width="1217" height="3" key="GridCell.Tab.0.bottom" timestamp="1633670194028">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state width="1217" height="3" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1633670194028" />
+    <state width="1217" height="3" key="GridCell.Tab.0.center" timestamp="1633670194027">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state width="1217" height="3" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1633670194027" />
+    <state width="1217" height="3" key="GridCell.Tab.0.left" timestamp="1633670194026">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state width="1217" height="3" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1633670194026" />
+    <state width="1217" height="3" key="GridCell.Tab.0.right" timestamp="1633670194027">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state width="1217" height="3" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1633670194027" />
+    <state x="53" y="0" key="SettingsEditor" timestamp="1632460386739">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="53" y="0" key="SettingsEditor/0.0.1289.819@0.0.1289.819" timestamp="1632460386739" />
+    <state x="269" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1633587070586">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="269" y="192" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1633587070586" />
+    <state x="313" y="122" key="extract.method.dialog" timestamp="1632712593076">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="313" y="122" key="extract.method.dialog/0.0.1289.819@0.0.1289.819" timestamp="1632712593076" />
     <state x="0" y="0" key="new project wizard" timestamp="1631546717707">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="0" y="0" key="new project wizard/0.0.1289.819@0.0.1289.819" timestamp="1631546717707" />
+    <state x="328" y="0" key="refactoring.ChangeSignatureDialog" timestamp="1632813298514">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="328" y="0" key="refactoring.ChangeSignatureDialog/0.0.1289.819@0.0.1289.819" timestamp="1632813298514" />
+    <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1633093930437">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1289.819@0.0.1289.819" timestamp="1633093930437" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

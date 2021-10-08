@@ -3,13 +3,17 @@ package SmartBoard;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Column extends Project {
+public class Column  {
 
-
+    private String name;
     ArrayList<Task> tasks = new ArrayList<>();
 
     public Column(String name) {
-        super(name);
+        this.name = name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public void addTask(Task task) {
@@ -28,4 +32,6 @@ public class Column extends Project {
         tasks.remove(task);
         tasks.trimToSize();
     }
+
+
 }

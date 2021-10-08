@@ -1,7 +1,7 @@
 package Response;
 
-import SmartBoard.Task;
-import SmartBoard.UserProfile;
+import model.Task;
+import model.UserProfile;
 
 public class CreateTask extends CreateColumn {
     private String description;

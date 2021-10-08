@@ -14,8 +14,8 @@ public class Workspace {
         response.doAction(profile);
     }
 
-    public void displayWorkspace() {
-        
+    public void logout() {
+        profile = null;
     }
 
 

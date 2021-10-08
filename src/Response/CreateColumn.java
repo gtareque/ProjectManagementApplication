@@ -1,6 +1,6 @@
 package Response;
 
-import SmartBoard.UserProfile;
+import model.UserProfile;
 
 public class CreateColumn extends CreateProject {
     private int projectIndex;

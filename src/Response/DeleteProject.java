@@ -1,6 +1,6 @@
 package Response;
 
-import SmartBoard.UserProfile;
+import model.UserProfile;
 
 public class DeleteProject implements  IResponse {
 

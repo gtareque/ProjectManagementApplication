@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="665.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.WorkspaceController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Workspace">
+            <items>
+              <MenuItem fx:id="newProjectButton" mnemonicParsing="false" text="New project" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Project">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Add column" />
+                  <MenuItem mnemonicParsing="false" text="Rename" />
+                  <MenuItem mnemonicParsing="false" text="Set as default" />
+              <MenuItem mnemonicParsing="false" text="Unset default" />
+                  <MenuItem fx:id="deleteProject" mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <GridPane prefHeight="40.0" prefWidth="381.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.85716029575894" minWidth="10.0" prefWidth="166.71429443359375" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="234.71430315290178" minWidth="10.0" prefWidth="67.8571341378348" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="117.00001743861606" minWidth="10.0" prefWidth="57.857134137834805" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="104.4285888671875" minWidth="10.0" prefWidth="63.57143729073664" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                <Button fx:id="logOut" mnemonicParsing="false" text="Log out" GridPane.columnIndex="3" />
+                  <Button fx:id="profileButton" mnemonicParsing="false" text="Profile" GridPane.columnIndex="2" />
+                  <ImageView fx:id="displayPhoto" fitHeight="42.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" />
+                  <Label fx:id="displayName" prefHeight="16.0" prefWidth="157.0" />
+               </children>
+            </GridPane>
+        </buttons>
+      </ButtonBar>
+      <TabPane fx:id="projectTab" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" />
+   </children>
+</VBox>

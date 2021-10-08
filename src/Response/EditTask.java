@@ -1,9 +1,9 @@
 package Response;
 
-import SmartBoard.Column;
-import SmartBoard.Project;
-import SmartBoard.Task;
-import SmartBoard.UserProfile;
+import model.Column;
+import model.Project;
+import model.Task;
+import model.UserProfile;
 
 public class EditTask extends EditColumn {
     private int taskIndex;

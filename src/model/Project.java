@@ -1,8 +1,9 @@
-package SmartBoard;
+package model;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class Project {
+public class Project implements Serializable {
     private String name;
 
 
@@ -12,15 +13,15 @@ public class Project {
         this.name = name;
     }
 
-    public void changeColumn(int task, int from, int to) {
-        columns.get(from).removeTask(columns.get(from).getTask(task));
-        columns.get(to).addTask(task);
-    }
+
 
     public void setName(String name) {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
     public void addColumn(String name) {
         columns.add(new Column(name));
     }

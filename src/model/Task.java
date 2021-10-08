@@ -1,21 +1,22 @@
-package SmartBoard;
+package model;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-public class Task extends Project {
-
+public class Task implements Serializable {
+    private String name;
     private String description;
     private LocalDate dueDate;
     private ArrayList<Checklist> checklists = new ArrayList<>();
 
     public Task(String name, String description) {
-        super(name);
+        this.name = name;
         this.description = description;
     }
 
     public Task(String name, String description, LocalDate dueDate) {
-        super(name);
+        this.name = name;
         this.description = description;
         this.dueDate = dueDate;
     }
@@ -34,7 +35,7 @@ public class Task extends Project {
 
     }
     public void setName(String name) {
-        super.setName(name);
+        this.name = name;
     }
 
     public String getDescription() {

@@ -1,7 +1,7 @@
 package Response;
 
-import SmartBoard.Project;
-import SmartBoard.UserProfile;
+import model.Project;
+import model.UserProfile;
 
 public class ChangeColumn implements IResponse {
     private int projectIndex, columnIndex, taskIndex, toIndex;

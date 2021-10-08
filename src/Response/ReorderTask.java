@@ -1,8 +1,8 @@
 package Response;
 
-import SmartBoard.Column;
-import SmartBoard.Task;
-import SmartBoard.UserProfile;
+import model.Column;
+import model.Task;
+import model.UserProfile;
 
 public class ReorderTask implements IResponse{
     int project;

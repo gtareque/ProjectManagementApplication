@@ -1,8 +1,8 @@
 package Response;
 
-import SmartBoard.Column;
-import SmartBoard.Project;
-import SmartBoard.UserProfile;
+import model.Column;
+import model.Project;
+import model.UserProfile;
 
 public class EditColumn extends EditProject  {
     private int columnIndex;
