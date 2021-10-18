@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="columnBox" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HeaderController">
+   <children>
+      <Pane id="taskCard" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="250.0" style="-fx-background-color: eaf3bc; -fx-border-color: black;" stylesheets="@style.css">
+         <children>
+            <MenuButton id="addTaskButton" fx:id="addTask" layoutX="166.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" prefHeight="24.0" prefWidth="67.0" stylesheets="@style.css" text="Add task">
+              <items>
+                <MenuItem fx:id="newTask" mnemonicParsing="false" text="New task" />
+                <MenuItem fx:id="deleteColumn" mnemonicParsing="false" text="Delete Column" />
+              </items>
+               <font>
+                  <Font size="8.0" />
+               </font>
+            </MenuButton>
+            <Label fx:id="name" layoutX="14.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="24.0" prefWidth="137.0" />
+         </children>
+         <effect>
+            <Blend />
+         </effect>
+         <opaqueInsets>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </Pane>
+   </children>
+   <padding>
+      <Insets left="10.0" top="10.0" />
+   </padding>
+</VBox>

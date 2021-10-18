@@ -38,6 +38,10 @@ public class Task implements Serializable {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public String getDescription() {
         return description;
     }

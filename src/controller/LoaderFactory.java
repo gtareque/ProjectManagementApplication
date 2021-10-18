@@ -12,7 +12,13 @@ public class LoaderFactory {
             return new FXMLLoader(getClass().getResource("../resources/view/SignupView.fxml"));
         } else if (controller instanceof WorkspaceController) {
             return new FXMLLoader(getClass().getResource("../resources/view/WorkspaceView.fxml"));
-        }  else {
+        } else if(controller instanceof AddColumnController) {
+            return  new FXMLLoader(getClass().getResource("../resources/view/AddColumnView.fxml"));
+        } else if(controller instanceof AddTaskController) {
+            return  new FXMLLoader(getClass().getResource("../resources/view/AddTaskView.fxml"));
+        } else
+
+         {
             return null;
         }
     }

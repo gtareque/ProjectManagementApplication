@@ -2,37 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1d8fe7-61fe-404c-a094-bc58a603ab96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/controller/Controllable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/CreateProjectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Display.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/LoaderFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SignupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/WorkspaceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Authenticator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Workspace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/AddColumnController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/AddTaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/HeaderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/TaskController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/view/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/ChangeColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/ChangeColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/CreateColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/CreateColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/CreateProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/CreateProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/CreateTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/CreateTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/UML.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/ChangeColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/CreateColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/CreateProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/CreateTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/DeleteColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/DeleteProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/DeleteTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/EditColumn.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/EditProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/EditProject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/EditTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/IResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/Response/ReorderTask.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/Authenticator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/Checklist.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/Column.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/Project.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/SmartBoard.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/Task.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/UserProfile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/SUbmission/src/SmartBoard/Workspace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/Response/DeleteColumn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/Response/DeleteColumn.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/CreateProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/CreateProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoaderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoaderFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/SignupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/WorkspaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/WorkspaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Column.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Column.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Project.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Project.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Task.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/WorkspaceView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/WorkspaceView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Response/DeleteColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/DeleteColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/DeleteProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/DeleteProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/DeleteTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/DeleteTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/EditColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/EditProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/EditProject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditProject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/EditTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/EditTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Response/IResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/IResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Response/ReorderTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Response/ReorderTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Authenticator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Checklist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Checklist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Project.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/SmartBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SmartBoard/SmartBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/UserProfile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SmartBoard/Workspace.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CreateProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CreateProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoaderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/WorkspaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Column.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Project.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Project.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/view/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/view/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/view/WorkspaceView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/view/WorkspaceView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.dat" beforeDir="false" afterPath="$PROJECT_DIR$/users.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +142,11 @@
       <workItem from="1632792812292" duration="968000" />
       <workItem from="1632797812832" duration="19365000" />
       <workItem from="1633068306177" duration="10418000" />
-      <workItem from="1633587070288" duration="11267000" />
+      <workItem from="1633587070288" duration="13622000" />
+      <workItem from="1633993667282" duration="1227000" />
+      <workItem from="1634103312329" duration="1732000" />
+      <workItem from="1634118453058" duration="260000" />
+      <workItem from="1634119988011" duration="81939000" />
     </task>
     <servers />
   </component>
@@ -127,14 +154,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="313" y="107" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1634176944785">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="313" y="107" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1289.819@0.0.1289.819" timestamp="1634176944785" />
     <state x="353" y="194" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1633094461152">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="353" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1289.819@0.0.1289.819" timestamp="1633094461152" />
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1632813296183">
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1634531584725">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1632813296183" />
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1634531584725" />
     <state x="400" y="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1632831248308">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -151,30 +182,30 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="375" y="71" key="FileChooserDialogImpl/0.0.1289.819@0.0.1289.819" timestamp="1632791439356" />
-    <state width="1217" height="3" key="GridCell.Tab.0.bottom" timestamp="1633670194028">
+    <state width="1217" height="135" key="GridCell.Tab.0.bottom" timestamp="1634557266131">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="3" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1633670194028" />
-    <state width="1217" height="3" key="GridCell.Tab.0.center" timestamp="1633670194027">
+    <state width="1217" height="135" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1634557266131" />
+    <state width="1217" height="135" key="GridCell.Tab.0.center" timestamp="1634557266130">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="3" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1633670194027" />
-    <state width="1217" height="3" key="GridCell.Tab.0.left" timestamp="1633670194026">
+    <state width="1217" height="135" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1634557266130" />
+    <state width="1217" height="135" key="GridCell.Tab.0.left" timestamp="1634557266130">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="3" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1633670194026" />
-    <state width="1217" height="3" key="GridCell.Tab.0.right" timestamp="1633670194027">
+    <state width="1217" height="135" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1634557266130" />
+    <state width="1217" height="135" key="GridCell.Tab.0.right" timestamp="1634557266130">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="3" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1633670194027" />
+    <state width="1217" height="135" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1634557266130" />
     <state x="53" y="0" key="SettingsEditor" timestamp="1632460386739">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="53" y="0" key="SettingsEditor/0.0.1289.819@0.0.1289.819" timestamp="1632460386739" />
-    <state x="269" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1633587070586">
+    <state x="269" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1634119989154">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="269" y="192" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1633587070586" />
+    <state x="269" y="192" key="com.intellij.ide.util.TipDialog/0.0.1289.819@0.0.1289.819" timestamp="1634119989154" />
     <state x="313" y="122" key="extract.method.dialog" timestamp="1632712593076">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -187,10 +218,10 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="328" y="0" key="refactoring.ChangeSignatureDialog/0.0.1289.819@0.0.1289.819" timestamp="1632813298514" />
-    <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1633093930437">
+    <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1634167646580">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1289.819@0.0.1289.819" timestamp="1633093930437" />
+    <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1289.819@0.0.1289.819" timestamp="1634167646580" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

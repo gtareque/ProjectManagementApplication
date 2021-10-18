@@ -50,6 +50,13 @@ public class SignupController implements Controllable {
     }
     @FXML
     public void initialize() {
+        try {
+            BufferedImage bufferedImage = ImageIO.read(new File("C:/ProjectManagementApplication/src/resources/media/index.jpg"));
+            WritableImage defaultPhoto = SwingFXUtils.toFXImage(bufferedImage, null);
+            image.setImage(defaultPhoto);
+        } catch (IOException e) {
+
+        }
         signup.setOnAction(event -> {
             System.out.println(fName.getText());
             Authenticator authenticator = Authenticator.getInstance();

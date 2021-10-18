@@ -31,6 +31,7 @@ public class CreateProjectController implements Controllable {
 
     @FXML
     public void initialize() {
+
         ok.setOnAction(event -> {
             new CreateProject(projectName.getText()).doAction(profile);
             Authenticator authenticator = Authenticator.getInstance();
@@ -43,6 +44,7 @@ public class CreateProjectController implements Controllable {
             Workspace workspace = new Workspace(profile);
             new Display().displayStage(new WorkspaceController(stage, profile));
         });
+
     }
 
     public void showStage(Pane root) {

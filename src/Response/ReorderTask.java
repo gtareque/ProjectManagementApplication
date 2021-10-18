@@ -17,12 +17,9 @@ public class ReorderTask implements IResponse{
     }
     @Override
     public void doAction(UserProfile profile) {
+        System.out.println(to);
         Column temp = profile.getProject(project).getColumn(column);
-        Task tempTask = temp.getTask(task);
-        temp.removeTask(task);
-        temp.addTask(task, temp.getTask(to));
-        temp.removeTask(to);
-        temp.addTask(to, tempTask);
+        temp.swapTask(task, to);
 
     }
 }

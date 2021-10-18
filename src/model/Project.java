@@ -35,4 +35,8 @@ public class Project implements Serializable {
         return columns.get(index);
     }
 
+    public int columnSize() {
+        return columns.size();
+    }
+
 }

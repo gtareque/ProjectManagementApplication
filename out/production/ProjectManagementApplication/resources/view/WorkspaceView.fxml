@@ -24,7 +24,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Project">
             <items>
-                  <MenuItem mnemonicParsing="false" text="Add column" />
+                  <MenuItem fx:id="addColumn" mnemonicParsing="false" text="Add column" />
                   <MenuItem mnemonicParsing="false" text="Rename" />
                   <MenuItem mnemonicParsing="false" text="Set as default" />
               <MenuItem mnemonicParsing="false" text="Unset default" />
@@ -54,6 +54,6 @@
             </GridPane>
         </buttons>
       </ButtonBar>
-      <TabPane fx:id="projectTab" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" />
+      <TabPane fx:id="projectTab" prefHeight="446.0" prefWidth="666.0" tabClosingPolicy="UNAVAILABLE" />
    </children>
 </VBox>

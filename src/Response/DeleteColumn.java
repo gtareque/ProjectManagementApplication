@@ -11,7 +11,7 @@ public class DeleteColumn extends DeleteProject {
 
     @Override
     public void doAction(UserProfile profile) {
-        profile.removeProject(getProjectIndex());
+        profile.getProject(getProjectIndex()).removeColumn(columnIndex);
     }
 
     public int getColumnIndex() {

@@ -2,6 +2,7 @@ package model;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Column implements Serializable {
 
@@ -31,6 +32,16 @@ public class Column implements Serializable {
     public void removeTask(int task) {
         tasks.remove(task);
         tasks.trimToSize();
+    }
+    public int tasksSize() {
+        return tasks.size();
+    }
+
+    public void swapTask(int from, int to) {
+        Collections.swap(tasks,from, to);
+    }
+    public String getName() {
+        return name;
     }
 
 

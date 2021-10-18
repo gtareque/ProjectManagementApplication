@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
@@ -27,7 +28,7 @@ public class LoginController implements Controllable {
     private TextField uName;
 
     @FXML
-    private TextField password;
+    private PasswordField password;
 
 
     @FXML
