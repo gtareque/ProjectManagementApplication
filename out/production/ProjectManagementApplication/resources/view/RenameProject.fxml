@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="487.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateProjectController">
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="226.0" prefWidth="487.0" spacing="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RenameProjectController">
    <children>
       <Label prefHeight="17.0" prefWidth="415.0" text="Enter Name">
          <VBox.margin>
@@ -24,6 +24,7 @@
       </TextField>
       <HBox alignment="TOP_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="98.0" prefWidth="423.0" spacing="15.0">
          <children>
+            <Label fx:id="errorMessage" prefHeight="17.0" prefWidth="282.0" textFill="#f30505" />
             <Button fx:id="ok" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="ok" />
             <Button fx:id="cancel" mnemonicParsing="false" text="Cancel" textAlignment="RIGHT" />
          </children>

@@ -1,20 +1,16 @@
 package controller;
 
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import javafx.util.Callback;
 import model.Authenticator;
 import model.UserProfile;
-import model.Workspace;
 
-import java.io.IOException;
 
 public class LoginController implements Controllable {
 
@@ -37,15 +33,19 @@ public class LoginController implements Controllable {
     @FXML
     private Button register;
 
-
+    @FXML
+    private Label errorMessage;
 
     @FXML
     public void initialize() {
         login.setOnAction(event -> {
             Authenticator authenticator = Authenticator.getInstance();
             UserProfile profile = authenticator.authenticate(uName.getText(), password.getText());
-
-            new Display().displayStage(new WorkspaceController(stage, profile));
+            if(profile != null) {
+                new Display().displayStage(new WorkspaceController(stage, profile));
+            } else {
+                errorMessage.setText("Incorrect username/password");
+            }
         });
         register.setOnAction(event -> {
             new Display().displayStage(new SignupController(stage));
@@ -56,7 +56,7 @@ public class LoginController implements Controllable {
         Scene scene = new Scene(root, 500, 300);
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.setTitle("Welcome");
+        stage.setTitle("Login");
         stage.show();
     }
 }

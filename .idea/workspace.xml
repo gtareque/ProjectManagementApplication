@@ -2,10 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e1d8fe7-61fe-404c-a094-bc58a603ab96" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/controller/EditProfileController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/RenameProjectController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/CreateProjectController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/CreateProjectController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoaderFactory.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoaderFactory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/SignupController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/SignupController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/WorkspaceController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/controller/WorkspaceController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Authenticator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Authenticator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/UserProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/UserProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/model/Workspace.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/CreateProjectView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/CreateProjectView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/WorkspaceView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectManagementApplication/resources/view/WorkspaceView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/CreateProjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CreateProjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoaderFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoaderFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SignupController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/view/SignupView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/view/SignupView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/WorkspaceController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/WorkspaceController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Authenticator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Authenticator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/UserProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/UserProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Workspace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Workspace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/view/CreateProjectView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/view/CreateProjectView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/view/LoginView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/view/LoginView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/view/WorkspaceView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/view/WorkspaceView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users.dat" beforeDir="false" afterPath="$PROJECT_DIR$/users.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +119,7 @@
       <workItem from="1633993667282" duration="1227000" />
       <workItem from="1634103312329" duration="1732000" />
       <workItem from="1634118453058" duration="260000" />
-      <workItem from="1634119988011" duration="91661000" />
+      <workItem from="1634119988011" duration="107650000" />
     </task>
     <servers />
   </component>
@@ -113,10 +135,14 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="353" y="194" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1289.819@0.0.1289.819" timestamp="1633094461152" />
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1634531584725">
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser" timestamp="1634648221376">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1634531584725" />
+    <state x="406" y="18" key="#com.intellij.ide.util.MemberChooser/0.0.1289.819@0.0.1289.819" timestamp="1634648221376" />
+    <state x="326" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1634604188753">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="326" y="136" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1289.819@0.0.1289.819" timestamp="1634604188753" />
     <state x="400" y="299" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1632831248308">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -133,22 +159,22 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="375" y="71" key="FileChooserDialogImpl/0.0.1289.819@0.0.1289.819" timestamp="1632791439356" />
-    <state width="1217" height="135" key="GridCell.Tab.0.bottom" timestamp="1634602274746">
+    <state width="1217" height="135" key="GridCell.Tab.0.bottom" timestamp="1634651779491">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="135" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1634602274746" />
-    <state width="1217" height="135" key="GridCell.Tab.0.center" timestamp="1634602274745">
+    <state width="1217" height="135" key="GridCell.Tab.0.bottom/0.0.1289.819@0.0.1289.819" timestamp="1634651779491" />
+    <state width="1217" height="135" key="GridCell.Tab.0.center" timestamp="1634651779491">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="135" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1634602274745" />
-    <state width="1217" height="135" key="GridCell.Tab.0.left" timestamp="1634602274744">
+    <state width="1217" height="135" key="GridCell.Tab.0.center/0.0.1289.819@0.0.1289.819" timestamp="1634651779491" />
+    <state width="1217" height="135" key="GridCell.Tab.0.left" timestamp="1634651779491">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="135" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1634602274744" />
-    <state width="1217" height="135" key="GridCell.Tab.0.right" timestamp="1634602274745">
+    <state width="1217" height="135" key="GridCell.Tab.0.left/0.0.1289.819@0.0.1289.819" timestamp="1634651779491" />
+    <state width="1217" height="135" key="GridCell.Tab.0.right" timestamp="1634651779491">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
-    <state width="1217" height="135" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1634602274745" />
+    <state width="1217" height="135" key="GridCell.Tab.0.right/0.0.1289.819@0.0.1289.819" timestamp="1634651779491" />
     <state x="53" y="0" key="SettingsEditor" timestamp="1632460386739">
       <screen x="0" y="0" width="1289" height="819" />
     </state>
@@ -169,6 +195,10 @@
       <screen x="0" y="0" width="1289" height="819" />
     </state>
     <state x="328" y="0" key="refactoring.ChangeSignatureDialog/0.0.1289.819@0.0.1289.819" timestamp="1632813298514" />
+    <state x="218" y="185" key="run.anything.popup" timestamp="1634641012088">
+      <screen x="0" y="0" width="1289" height="819" />
+    </state>
+    <state x="218" y="185" key="run.anything.popup/0.0.1289.819@0.0.1289.819" timestamp="1634641012088" />
     <state x="223" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1634167646580">
       <screen x="0" y="0" width="1289" height="819" />
     </state>

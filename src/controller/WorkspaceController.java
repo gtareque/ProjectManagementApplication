@@ -23,8 +23,13 @@ import java.io.IOException;
 public class WorkspaceController implements Controllable {
     private Stage stage;
     private UserProfile profile;
+    private boolean newProject = false;
 
-
+    public WorkspaceController(Stage stage, UserProfile profile, boolean newProject) {
+        this.stage = stage;
+        this.profile = profile;
+        this.newProject = newProject;
+    }
     public WorkspaceController(Stage stage, UserProfile profile) {
         this.stage = stage;
         this.profile = profile;
@@ -33,36 +38,56 @@ public class WorkspaceController implements Controllable {
 
 
     @FXML
-    private Button logOut;
-
-    @FXML
-    private Button buttonProfile;
-
-    @FXML
-    private Label displayName;
-
-    @FXML
-    private ImageView displayPhoto;
-
-
-    @FXML
     private MenuItem newProjectButton;
-
-    @FXML
-    private TabPane projectTab;
-
-
-    @FXML
-    private MenuItem deleteProject;
 
     @FXML
     private MenuItem addColumn;
 
     @FXML
+    private MenuItem rename;
+
+    @FXML
+    private MenuItem defaultButton;
+
+    @FXML
+    private MenuItem unsetDefault;
+
+    @FXML
+    private MenuItem deleteProject;
+
+    @FXML
+    private Button logOut;
+
+    @FXML
+    private Button profileButton;
+
+    @FXML
+    private ImageView displayPhoto;
+
+    @FXML
+    private Label displayName;
+
+    @FXML
+    private TabPane projectTab;
+    @FXML
     public void initialize() {
         setUpDisplayPhoto();
         setUpProjectTabs();
 
+        if(newProject) {
+            projectTab.getSelectionModel().selectLast();
+        }
+        if(profile.getDefaultProject() > 0){
+            projectTab.getSelectionModel().select(profile.getDefaultProject());
+        }
+        defaultButton.setOnAction(event -> {
+            profile.setDefaultProject(projectTab.getSelectionModel().getSelectedIndex());
+            Authenticator.getInstance().save();
+        });
+        unsetDefault.setOnAction(event -> {
+            profile.setDefaultProject(0);
+            Authenticator.getInstance().save();
+        });
         addColumn.setOnAction(event -> {
             int index = projectTab.getSelectionModel().getSelectedIndex();
             new Display().displayStage(new AddColumnController(stage, profile, index));
@@ -88,14 +113,22 @@ public class WorkspaceController implements Controllable {
             new Display().displayStage(new LoginController(stage));
         });
 
+        rename.setOnAction(event -> {
+            new Display().displayStage(new RenameProjectController(stage, profile, projectTab.getSelectionModel().getSelectedIndex()));
+        });
+
+        profileButton.setOnAction(event-> {
+            new Display().displayStage(new EditProfileController(stage, profile));
+        });
+
 
 
     }
     public void showStage(Pane root) {
-        Scene scene = new Scene(root, 1000, 1000);
+        Scene scene = new Scene(root, 1000, 500);
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.setTitle("Welcome");
+        stage.setTitle("Workspace");
         stage.show();
     }
 
@@ -119,6 +152,14 @@ public class WorkspaceController implements Controllable {
 
     public void setUpProjectTabs() {
         for (int i = 0; i < profile.getProjects().size(); i++) {
+            if(i == 0) {
+                defaultButton.setDisable(false);
+                unsetDefault.setDisable(false);
+                addColumn.setDisable(false);
+                deleteProject.setDisable(false);
+                rename.setDisable(false);
+
+            }
             String name = profile.getProject(i).getName();
             projectTab.getTabs().add(new Tab(name));
             /* CREATE THE GRID */
@@ -157,5 +198,7 @@ public class WorkspaceController implements Controllable {
         scrollPane.setContent(grid);
         return scrollPane;
     }
+
+
 
 }

@@ -97,6 +97,9 @@ public class Authenticator {
     public UserProfile authenticate(String userName, String password) {
 
         UserProfile profile = users.get(userName);
+        if(profile == null) {
+            return null;
+        }
         if(password.equals(profile.getPassword())) {
             return profile;
         }

@@ -15,7 +15,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-
+import model.Authenticator;
+import model.UserProfile;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -24,87 +25,51 @@ import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import model.Authenticator;
-import model.UserProfile;
+public class EditProfileController implements Controllable {
+    private Stage stage;
+    private UserProfile profile = null;
+    WritableImage img = null;
+    public EditProfileController(Stage stage, UserProfile profile) {
+        this.stage = stage;
+        this.profile = profile;
 
+    }
 
-/**
- * This is the controller to the sign up view.
- * All the handler function has been stored as lambda expression.
- * Implements the Controllable interface that all the primary controllers have implemented.
- *
- */
-
-public class SignupController implements Controllable {
-
-    WritableImage img = null;       /* the profile picture as writeable image */
-
-    /* FXML fxids */
-    /**************************************************************************************/
     @FXML
     private ImageView image;
-    @FXML
-    private Button signup;
+
     @FXML
     private TextField fName;
+
     @FXML
     private TextField lName;
-    @FXML
-    private TextField uName;
+
     @FXML
     private PasswordField password;
+
     @FXML
     private Label errorMessage;
+
+    @FXML
+    private Button update;
+
     @FXML
     private Button back;
-    /*******************************************************************************/
-    private Stage stage;        /* the view stage */
 
-    /*
-     * Stage assigning controller
-     */
-    public SignupController(Stage stage) {
-        this.stage = stage;
-
-    }
-
-    /* The function initialize() is used by JAVAFX to connect all interactions with the controller.
-     * @return void
-     */
     @FXML
     public void initialize() {
-
-        /* load the default photo */
-        try {
-            BufferedImage bufferedImage = ImageIO.read(new File("C:/ProjectManagementApplication/src/resources/media/index.jpg"));
-            WritableImage defaultPhoto = SwingFXUtils.toFXImage(bufferedImage, null);
-            image.setImage(defaultPhoto);
-        } catch (IOException e) {
-            e.printStackTrace();
+        loadData();
+        if(profile.getPhoto() != null) {
+            image.setImage(profile.getPhoto());
         }
-
-        /* when Create user is clicked */
-        signup.setOnAction(signUpHandler);
-
-        /* when the default image is clicked for upload */
-        image.onMouseClickedProperty().set(uploadPhotoHandler);
-
-        /* when the back button is pressed */
-        back.setOnAction(t -> {
-            new Display().displayStage(new LoginController(stage));
+        update.setOnAction(updateHandler);
+        back.setOnAction(actionEvent -> {
+            new Display().displayStage(new WorkspaceController(stage, profile));
         });
+        image.onMouseClickedProperty().set(uploadPhotoHandler);
 
     }
 
-
-
-    /**
-     * Function implemented by Controllable.
-     * Used to display the stage
-     *
-     * @return void
-     * @see stage
-     */
     @Override
     public void showStage(Pane root) {
         Scene scene = new Scene(root, 500, 600);
@@ -114,6 +79,11 @@ public class SignupController implements Controllable {
         stage.show();
     }
 
+    public void loadData() {
+        fName.setText(profile.getFirstName());
+        lName.setText(profile.getLastName());
+        password.setText(profile.getPassword());
+    }
     /**
      * Function used for validation. Function uses regex to check pattern
      * names can only be alphabetical
@@ -130,7 +100,7 @@ public class SignupController implements Controllable {
         Pattern uNamePattern = Pattern.compile((userNameRegex));
         Matcher firstNameMatcher = pattern.matcher(fName.getText());
         Matcher lastNameMatcher = pattern.matcher(lName.getText());
-        Matcher userNameMatcher = uNamePattern.matcher(uName.getText());
+
 
         /* check if empty or short */
         if(fName.getText().length() == 0) {
@@ -143,10 +113,7 @@ public class SignupController implements Controllable {
             return false;
         }
 
-        if(uName.getText().length() == 0) {
-            errorMessage.setText("User name cannot be empty");
-            return false;
-        }
+
 
         if(password.getText().length() < 6) {
             errorMessage.setText("Password must be at least 6 characters");
@@ -164,11 +131,7 @@ public class SignupController implements Controllable {
             errorMessage.setText("Last name can only have alphabets");
             return false;
         }
-        if(!userNameMatcher.matches()) {
 
-            errorMessage.setText("Username can only be alphanumeric");
-            return false;
-        }
         return true;
 
 
@@ -183,27 +146,21 @@ public class SignupController implements Controllable {
      * @return      void
      */
     @FXML
-    EventHandler<ActionEvent> signUpHandler = (event) -> {
+    EventHandler<ActionEvent> updateHandler = (event) -> {
 
         Authenticator authenticator = Authenticator.getInstance();
-        boolean signUpSuccess = true;
+
         if(validateInput()) {       // validate input
-            if (img == null) {      // no image uploaded
-                if (!authenticator.signUp(uName.getText().toLowerCase(), password.getText(), fName.getText(), lName.getText())) {
-                    errorMessage.setText("Username already exists");        // user name already exists
-                    signUpSuccess = false;
-                }
-            } else {        // image uploaded
-                if (!authenticator.signUp(uName.getText().toLowerCase(), password.getText(), fName.getText(), lName.getText(), img)) {
-                    errorMessage.setText("Username already exists");
-                    signUpSuccess = false;
-                }
+
+            profile.setFirstName(fName.getText());
+            profile.setLastName(lName.getText());
+            profile.setPassword(password.getText());
+            if(img != null) {
+                profile.setPhoto(img);
             }
-            if(signUpSuccess) {
-                /* take user to workspace */
-                UserProfile profile = authenticator.authenticate(uName.getText(), password.getText());
-                new Display().displayStage(new WorkspaceController(stage, profile));
-            }
+
+            authenticator.save();
+            new Display().displayStage(new WorkspaceController(stage, profile));
         }
 
     };
@@ -229,7 +186,7 @@ public class SignupController implements Controllable {
                 = new FileChooser.ExtensionFilter("png files (*.png)", "*.png");
         fileChooser.getExtensionFilters()
                 .addAll(extFilterJPG, extFilterjpg, extFilterPNG, extFilterpng);
-       /* File dialog box */
+        /* File dialog box */
         File file = fileChooser.showOpenDialog(null);
 
         /* read the file */
@@ -244,7 +201,4 @@ public class SignupController implements Controllable {
             errorMessage.setText("No photo found");
         }
     };
-
-
-
 }

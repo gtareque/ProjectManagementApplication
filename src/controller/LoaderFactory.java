@@ -15,8 +15,13 @@ public class LoaderFactory {
         } else if(controller instanceof AddColumnController) {
             return  new FXMLLoader(getClass().getResource("../resources/view/AddColumnView.fxml"));
         } else if(controller instanceof AddTaskController) {
-            return  new FXMLLoader(getClass().getResource("../resources/view/AddTaskView.fxml"));
-        } else
+            return new FXMLLoader(getClass().getResource("../resources/view/AddTaskView.fxml"));
+        } else if(controller instanceof RenameProjectController) {
+            return new FXMLLoader(getClass().getResource("../resources/view/RenameProject.fxml"));
+        } else if(controller instanceof  EditProfileController) {
+            return new FXMLLoader(getClass().getResource("../resources/view/EditProfileView.fxml"));
+        }else {
+        }
 
          {
             return null;

@@ -24,11 +24,11 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Project">
             <items>
-                  <MenuItem fx:id="addColumn" mnemonicParsing="false" text="Add column" />
-                  <MenuItem mnemonicParsing="false" text="Rename" />
-                  <MenuItem mnemonicParsing="false" text="Set as default" />
-              <MenuItem mnemonicParsing="false" text="Unset default" />
-                  <MenuItem fx:id="deleteProject" mnemonicParsing="false" text="Delete" />
+                  <MenuItem fx:id="addColumn" disable="true" mnemonicParsing="false" text="Add column" />
+                  <MenuItem fx:id="rename" disable="true" mnemonicParsing="false" text="Rename" />
+                  <MenuItem fx:id="defaultButton" disable="true" mnemonicParsing="false" text="Set as default" />
+              <MenuItem fx:id="unsetDefault" disable="true" mnemonicParsing="false" text="Unset default" />
+                  <MenuItem fx:id="deleteProject" disable="true" mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
         </menus>

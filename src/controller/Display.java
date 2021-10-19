@@ -14,6 +14,7 @@ public class Display {
         Callback<Class<?>, Object> controllerFactory = param -> {
             return controller;
         };
+
         loader.setControllerFactory(controllerFactory);
         VBox root = null;
         try {

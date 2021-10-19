@@ -13,14 +13,18 @@ public class UserProfile implements Serializable {
     private String lastName ;
     private WritableImage photo;
     private String userName;
-
+    private int defaultProject = 0;
     ArrayList<Project> projects = new ArrayList<>();
 
-    public Project getCurrentProjectOnDisplay() {
-        return currentProjectOnDisplay;
+    public int getDefaultProject() {
+        return defaultProject;
     }
 
-    Project currentProjectOnDisplay;
+    public void setDefaultProject(int value) {
+        defaultProject = value;
+    }
+
+
 
 
 
@@ -84,7 +88,7 @@ public class UserProfile implements Serializable {
 
     public void addProject(String name){
         projects.add(new Project(name));
-        currentProjectOnDisplay= projects.get(0);
+
    }
 
     public void removeProject(int projectIndex) {

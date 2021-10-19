@@ -9,7 +9,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 import model.Authenticator;
 import model.UserProfile;
-import model.Workspace;
+
 
 public class CreateProjectController implements Controllable {
 
@@ -36,13 +36,13 @@ public class CreateProjectController implements Controllable {
             new CreateProject(projectName.getText()).doAction(profile);
             Authenticator authenticator = Authenticator.getInstance();
             authenticator.save();
-            Workspace workspace = new Workspace(profile);
-            new Display().displayStage(new WorkspaceController(stage, profile));
+
+            new Display().displayStage(new WorkspaceController(stage, profile, true));
         });
 
         cancel.setOnAction(event -> {
-            Workspace workspace = new Workspace(profile);
-            new Display().displayStage(new WorkspaceController(stage, profile));
+
+            new Display().displayStage(new WorkspaceController(stage, profile, true));
         });
 
     }
